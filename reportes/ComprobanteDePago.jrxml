@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ComprobanteDePago" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="995887bc-483e-4dbd-af3f-b197c786680f">
+	<parameter name="Fecha" class="java.lang.String"/>
+	<parameter name="NombreApellido" class="java.lang.String"/>
+	<parameter name="DNI" class="java.lang.String"/>
+	<parameter name="Curso" class="java.lang.String"/>
+	<parameter name="FechaPago" class="java.lang.String"/>
+	<parameter name="Monto" class="java.lang.String"/>
+	<parameter name="Vencimiento" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="170" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="350" height="52" uuid="85ac5917-037d-447b-9207-e4f9456b65b8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="26" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Comprobante de Pago]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="179" y="55" width="382" height="35" uuid="2947ac41-e0ac-4e3d-9340-828995962d31"/>
+				<textElement verticalAlignment="Top">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NombreApellido}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="55" width="180" height="35" uuid="bcd5de2f-57cd-401b-a3a4-e898eee54764"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="18" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Nombre y apellido:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="130" width="180" height="30" uuid="b1e1f61c-9202-44f3-86bd-489d3cce4fcc"/>
+				<textElement>
+					<font size="18" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Curso:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="90" width="381" height="30" uuid="7aa65268-8a30-46c6-98a5-5bfbbc85aeae"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DNI}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="0" width="100" height="20" uuid="26669f41-c584-4c9c-9296-20d6426993be"/>
+				<text><![CDATA[Reporte generado el:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="0" width="100" height="20" uuid="9afe7540-2ce2-4626-b988-7a5be172aa7a"/>
+				<textFieldExpression><![CDATA[$P{Fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="90" width="180" height="30" uuid="c8a13bbc-a93f-46e2-b0d3-5c9f2c37b304"/>
+				<textElement>
+					<font size="18" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DNI:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="130" width="375" height="30" uuid="18ac6146-687a-46f7-92f4-73f192684e8a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Curso}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="360" y="22" width="195" height="30" uuid="6d0e8ff6-6e90-486f-931e-4e2de7b7f26d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="16" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[FormAr]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="30" backcolor="#5EA9FF" uuid="041c454b-4ede-4ecb-bc21-f89896a974a3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="180" height="30" uuid="40027d7c-4cc6-4ebe-b13b-6bdfd7fb7c39"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Monto Abonado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="180" height="30" uuid="298120b5-cf90-4489-bff3-721d8f3d97e9"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Fecha de pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="190" height="30" uuid="1ef9460f-c668-46e9-87d5-f1cd63913d6e"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Fecha de vencimiento]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="179" height="30" uuid="9b7fa428-9e6d-45ba-bfdb-5df1452ebd6e"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Monto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="30" uuid="65349c1b-bfeb-4959-b0e5-d6a3a4e9d7dc"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FechaPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="190" height="30" uuid="4513d4a6-212c-4419-b521-023fb68b2e69"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Vencimiento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="4" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="6" splitType="Stretch"/>
+	</summary>
+</jasperReport>

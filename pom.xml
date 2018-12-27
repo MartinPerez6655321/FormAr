@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.es.clase.maven</groupId>
+	<artifactId>FormAR</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>FormAR</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Everyone needs a logger, this is my preference -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
+		<!-- Jasperreports -->
+		<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- Mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.35</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.toedter/jcalendar -->
+		<dependency>
+			<groupId>com.toedter</groupId>
+			<artifactId>jcalendar</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all -->
+		<dependency>
+			<groupId>org.swinglabs.swingx</groupId>
+			<artifactId>swingx-all</artifactId>
+			<version>1.6.5-1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.swinglabs.swingx/swingx-all -->
+		<dependency>
+			<groupId>org.swinglabs.swingx</groupId>
+			<artifactId>swingx-all</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.lgooddatepicker/LGoodDatePicker -->
+		<dependency>
+			<groupId>com.github.lgooddatepicker</groupId>
+			<artifactId>LGoodDatePicker</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.icepdf.os/icepdf-core -->
+		<dependency>
+			<groupId>org.icepdf.os</groupId>
+			<artifactId>icepdf-core</artifactId>
+			<version>6.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.icepdf.os/icepdf-viewer -->
+		<dependency>
+			<groupId>org.icepdf.os</groupId>
+			<artifactId>icepdf-viewer</artifactId>
+			<version>6.2.2</version>
+		</dependency>
+<!-- https://mvnrepository.com/artifact/com.jtattoo/JTattoo -->
+<dependency>
+    <groupId>com.jtattoo</groupId>
+    <artifactId>JTattoo</artifactId>
+    <version>1.6.11</version>
+</dependency>
+
+	</dependencies>
+</project>
